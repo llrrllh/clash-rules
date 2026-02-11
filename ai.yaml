@@ -1,0 +1,17 @@
+payload:
+# >> Anthropic
+  - DOMAIN,cdn.usefathom.com
+  - DOMAIN-SUFFIX,anthropic.com
+  - DOMAIN-SUFFIX,claude.ai
+  - DOMAIN-SUFFIX,claudeusercontent.com
+# >> Apple intelligence
+  - DOMAIN,apple-relay.apple.com
+  - DOMAIN,apple-relay.cloudflare.com
+# >> AugmentCode
+  - DOMAIN-SUFFIX,augmentcode.com
+# >> Cursor
+  - DOMAIN-SUFFIX,cursor.sh
+  - DOMAIN-SUFFIX,cursor-cdn.com
+  - DOMAIN-SUFFIX,cursorapi.com
+  - DOMAIN-SUFFIX,cursor.com
+  - DOMAIN-SUFFIX,workos.com
