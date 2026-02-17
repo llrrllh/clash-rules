@@ -141,3 +141,11 @@ DOMAIN-SUFFIX,msftconnecttest.com
 DOMAIN-SUFFIX,live.com
 DOMAIN-SUFFIX,sfx.ms
 DOMAIN-SUFFIX,microsoft.com
+
+
+# >> From ai.yaml (Gemini specific)
+DOMAIN,makersuite.google.com
+DOMAIN-SUFFIX,bard.google.com
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+DOMAIN-SUFFIX,apis.google.com
