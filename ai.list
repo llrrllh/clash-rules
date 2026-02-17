@@ -1,116 +1,143 @@
-# >>> Global AI Ultimate RuleSet (2026 Edition) <<<
+# > AI Services & Google Ecosystem Rule-Set for Surge
 
-# --- [Process Name] 拦截 macOS/iOS 桌面端 ---
-PROCESS-NAME,ChatGPT
-PROCESS-NAME,Claude
-PROCESS-NAME,Cursor
-PROCESS-NAME,Copilot
-PROCESS-NAME,Bing
-PROCESS-NAME,Sider
-PROCESS-NAME,Monica
-PROCESS-NAME,Gemini
-PROCESS-NAME,Superhuman
+# >> Gamma & Perplexity & HeyGen
+DOMAIN-SUFFIX,gamma.app
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,heygen.com
 
-# --- [Domain Keyword] 模糊匹配 ---
+# >> Anthropic (Claude)
+DOMAIN,cdn.usefathom.com
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claudeusercontent.com
+
+# >> OpenAI (ChatGPT & API)
 DOMAIN-KEYWORD,openai
-DOMAIN-KEYWORD,chatgpt
-DOMAIN-KEYWORD,anthropic
-DOMAIN-KEYWORD,claude
-DOMAIN-KEYWORD,gemini
-DOMAIN-KEYWORD,notebooklm
-DOMAIN-KEYWORD,aistudio
-DOMAIN-KEYWORD,perplexity
-DOMAIN-KEYWORD,midjourney
-DOMAIN-KEYWORD,elevenlabs
-DOMAIN-KEYWORD,runwayml
-DOMAIN-KEYWORD,sora
-
-# --- [Domain Suffix] 核心服务与底层 API ---
-
-# > Google AI Ecosystem (Essential for NotebookLM & AI Studio)
-DOMAIN-SUFFIX,gemini.google.com
-DOMAIN-SUFFIX,bard.google.com
-DOMAIN-SUFFIX,aistudio.google.com
-DOMAIN-SUFFIX,makersuite.google.com
-DOMAIN-SUFFIX,notebooklm.google
-DOMAIN-SUFFIX,notebooklm.google.com
-DOMAIN-SUFFIX,generativeai.google
-DOMAIN-SUFFIX,ai.google.com
-DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
-DOMAIN-SUFFIX,googleapis.com
-DOMAIN-SUFFIX,googleusercontent.com
-DOMAIN-SUFFIX,gstatic.com
-
-# > OpenAI & Sora
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
-DOMAIN-SUFFIX,sora.com
+DOMAIN-SUFFIX,ai.com
+DOMAIN,browser-intake-datadoghq.com
+DOMAIN,chat.openai.com.cdn.cloudflare.net
+DOMAIN,openai-api.arkoselabs.com
+DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+DOMAIN,openaicomproductionae4b.blob.core.windows.net
+DOMAIN,production-openaicom-storage.azureedge.net
+DOMAIN,static.cloudflareinsights.com
+DOMAIN-SUFFIX,algolia.net
+DOMAIN-SUFFIX,api.statsig.com
+DOMAIN-SUFFIX,chatgpt.livekit.cloud
+DOMAIN-SUFFIX,client-api.arkoselabs.com
+DOMAIN-SUFFIX,events.statsigapi.net
+DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,host.livekit.cloud
 DOMAIN-SUFFIX,identrust.com
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,launchdarkly.com
+DOMAIN-SUFFIX,observeit.net
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+DOMAIN-SUFFIX,openaicom.imgix.net
+DOMAIN-SUFFIX,segment.io
 DOMAIN-SUFFIX,stripe.com
+DOMAIN-SUFFIX,turn.livekit.cloud
+IP-CIDR,24.199.123.28/32,no-resolve
+IP-CIDR,64.23.132.171/32,no-resolve
 
-# > Anthropic (Claude)
-DOMAIN-SUFFIX,anthropic.com
-DOMAIN-SUFFIX,claude.ai
-DOMAIN-SUFFIX,servd.host
+# >> Google Ecosystem & Gemini & NotebookLM
+# 整合了所有 Google 相关的主域名、CDN (gstatic/gvt)、API 以及 Gemini 的独立域名
+DOMAIN-KEYWORD,google
+DOMAIN-KEYWORD,blogspot
+DOMAIN-KEYWORD,colab
+DOMAIN-KEYWORD,developerprofiles
+DOMAIN-KEYWORD,generativelanguage
+DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-SUFFIX,youtube.com
+DOMAIN-SUFFIX,ytimg.com
+DOMAIN-SUFFIX,gvt1.com
+DOMAIN-SUFFIX,gvt2.com
+DOMAIN-SUFFIX,gvt3.com
+DOMAIN-SUFFIX,deepmind.com
+DOMAIN-SUFFIX,deepmind.google
+DOMAIN-SUFFIX,generativeai.google
+DOMAIN-SUFFIX,notebooklm.google
+DOMAIN,ai.google.dev
+DOMAIN,alkalimakersuite-pa.clients6.google.com
 
-# > Microsoft Copilot & Bing
-DOMAIN-SUFFIX,bing.com
-DOMAIN-SUFFIX,bingvisualsearch.com
-DOMAIN-SUFFIX,copilot.microsoft.com
-DOMAIN-SUFFIX,edgeservices.bing.com
-
-# > Developer Tools (Cursor, v0, Bolt, Lovable, Replit, Groq)
-DOMAIN-SUFFIX,cursor.com
+# >> Cursor & AugmentCode
 DOMAIN-SUFFIX,cursor.sh
-DOMAIN-SUFFIX,cursorapi.com
 DOMAIN-SUFFIX,cursor-cdn.com
-DOMAIN-SUFFIX,v0.dev
-DOMAIN-SUFFIX,bolt.new
-DOMAIN-SUFFIX,lovable.dev
-DOMAIN-SUFFIX,replit.com
-DOMAIN-SUFFIX,replit.ai
-DOMAIN-SUFFIX,groq.com
-DOMAIN-SUFFIX,together.ai
+DOMAIN-SUFFIX,cursorapi.com
+DOMAIN-SUFFIX,cursor.com
+DOMAIN-SUFFIX,workos.com
+DOMAIN-SUFFIX,augmentcode.com
 
-# > Search & Research
-DOMAIN-SUFFIX,perplexity.ai
-DOMAIN-SUFFIX,x.ai
+# >> Windsurf (Codeium)
+DOMAIN-SUFFIX,windsurf.com
+DOMAIN-SUFFIX,codeium.com
+
+# >> Trae (Bytedance AI)
+DOMAIN-SUFFIX,trae.ai
+DOMAIN-SUFFIX,byteoversea.com
+DOMAIN-SUFFIX,trae-api-sg.mchost.guru
+DOMAIN-SUFFIX,lf3-static.bytednsdoc.com
+DOMAIN-SUFFIX,bytegate-sg.byteintlapi.com
+DOMAIN-SUFFIX,abtestvm-sg.bytedance.com
+DOMAIN-SUFFIX,tron-sg.bytelemon.com
+DOMAIN-SUFFIX,sf16-short-sg.bytedapm.com
+DOMAIN-SUFFIX,trae.com.cn
+DOMAIN-SUFFIX,tron.jiyunhudong.com
+DOMAIN-SUFFIX,starling.zijieapi.com
+
+# >> X / Grok / Twitter
+DOMAIN-KEYWORD,twitter
+DOMAIN-SUFFIX,x.com
 DOMAIN-SUFFIX,grok.com
-DOMAIN-SUFFIX,poe.com
-DOMAIN-SUFFIX,mistral.ai
-DOMAIN-SUFFIX,meta.ai
-DOMAIN-SUFFIX,genspark.ai
+DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,twitter.com
+DOMAIN-SUFFIX,twimg.com
+DOMAIN-SUFFIX,ads-twitter.com
+DOMAIN-SUFFIX,cms-twdigitalassets.com
+DOMAIN-SUFFIX,periscope.tv
+DOMAIN-SUFFIX,pscp.tv
+DOMAIN-SUFFIX,t.co
+DOMAIN-SUFFIX,tellapart.com
+DOMAIN-SUFFIX,tweetdeck.com
+DOMAIN-SUFFIX,twimg.co
+DOMAIN-SUFFIX,twimg.org
+DOMAIN-SUFFIX,twitpic.com
+DOMAIN-SUFFIX,twitter.biz
+DOMAIN-SUFFIX,twitter.jp
+DOMAIN-SUFFIX,twittercommunity.com
+DOMAIN-SUFFIX,twitterflightschool.com
+DOMAIN-SUFFIX,twitterinc.com
+DOMAIN-SUFFIX,twitteroauth.com
+DOMAIN-SUFFIX,twitterstat.us
+DOMAIN-SUFFIX,twtrdns.net
+DOMAIN-SUFFIX,twttr.com
+DOMAIN-SUFFIX,twttr.net
+DOMAIN-SUFFIX,twvid.com
+DOMAIN-SUFFIX,vine.co
+IP-CIDR,192.133.76.0/22,no-resolve
+IP-CIDR,199.59.148.0/22,no-resolve
+IP-CIDR,199.96.56.0/21,no-resolve
+IP-CIDR,202.160.128.0/22,no-resolve
+IP-CIDR,209.237.192.0/19,no-resolve
+IP-CIDR,69.195.160.0/19,no-resolve
 
-# > Productivity & Extensions (Gamma, Sider, Monica)
-DOMAIN-SUFFIX,gamma.app
-DOMAIN-SUFFIX,gamma.site
-DOMAIN-SUFFIX,sider.ai
-DOMAIN-SUFFIX,monica.im
-DOMAIN-SUFFIX,shortwave.com
-
-# > Video & Audio Generation (Luma, Runway, HeyGen, Suno, Udio)
-DOMAIN-SUFFIX,luma.ai
-DOMAIN-SUFFIX,lumalabs.ai
-DOMAIN-SUFFIX,runwayml.com
-DOMAIN-SUFFIX,pika.art
-DOMAIN-SUFFIX,heygen.com
-DOMAIN-SUFFIX,suno.com
-DOMAIN-SUFFIX,suno.ai
-DOMAIN-SUFFIX,udio.com
-DOMAIN-SUFFIX,elevenlabs.io
-
-# > Image Generation (Midjourney, Ideogram, Flux, Civitai)
-DOMAIN-SUFFIX,midjourney.com
-DOMAIN-SUFFIX,midjourney.io
-DOMAIN-SUFFIX,ideogram.ai
-DOMAIN-SUFFIX,blackforestlabs.ai
-DOMAIN-SUFFIX,leonardo.ai
-DOMAIN-SUFFIX,civitai.com
-
-# > Dependency (Discord for Midjourney)
-DOMAIN-SUFFIX,discord.com
-DOMAIN-SUFFIX,discord.gg
-DOMAIN-SUFFIX,discordapp.com
-DOMAIN-SUFFIX,discordapp.net
+# >> Apple Intelligence & Common Captcha / Infra
+DOMAIN,apple-relay.apple.com
+DOMAIN,apple-relay.cloudflare.com
+DOMAIN-SUFFIX,auth0.com
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,hcaptcha.com
+DOMAIN-SUFFIX,recaptcha.net
+DOMAIN-SUFFIX,msftconnecttest.com
+DOMAIN-SUFFIX,live.com
+DOMAIN-SUFFIX,sfx.ms
+DOMAIN-SUFFIX,microsoft.com
